@@ -5,6 +5,7 @@ ThemeData MyTheme = ThemeData(
   primarySwatch: ThemeColors.primaryColor,
   primaryColor: ThemeColors.primaryColor,
   brightness: Brightness.dark,
+  fontFamily: 'Raleway',
   textTheme: TextTheme(
     bodyMedium: TextStyle(
       fontSize: 16
@@ -13,6 +14,10 @@ ThemeData MyTheme = ThemeData(
       fontSize: 28,
       fontWeight: FontWeight.bold,
       color: Colors.white
+    ),
+    titleMedium: TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.normal,
     )
   ),
 );

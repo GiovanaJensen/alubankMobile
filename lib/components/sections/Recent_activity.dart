@@ -9,7 +9,7 @@ class RecentActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BoxCard(boxContent: _RecentActivityContent());
+    return const BoxCard(boxContent: _RecentActivityContent());
   }
 }
 
@@ -33,7 +33,7 @@ class _RecentActivityContent extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Saída"),
+                  const Text("Saída"),
                   Text("\$9900.97", style: Theme.of(context).textTheme.bodyLarge,),
                 ],
               )
@@ -50,7 +50,7 @@ class _RecentActivityContent extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Entrada"),
+                      const Text("Entrada"),
                       Text("\$9900.97", style: Theme.of(context).textTheme.bodyLarge,),
                     ],
                   )
@@ -60,8 +60,8 @@ class _RecentActivityContent extends StatelessWidget {
           ),
         ],
       ),
-        Padding(
-          padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
+        const Padding(
+          padding: EdgeInsets.only(top: 16.0, bottom: 8.0),
           child: Text("Limite de gastos: \$432.50"),
         ),
         Container(
@@ -69,18 +69,18 @@ class _RecentActivityContent extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
           ),
-          child: LinearProgressIndicator(
+          child: const LinearProgressIndicator(
             minHeight: 8,
             value: 0.3,
             color: ThemeColors.primaryColor,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+        const Padding(
+          padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
           child: ContentDivision(),
         ),
-        Text("Esse mês você gastou \$400 reais com jogos! Tente abaixar esse custo!"),
-        TextButton(onPressed: (){}, child: Text("Diga-me como!", style: TextStyle(fontSize: 16, color: ThemeColors.primaryColor),))
+        const Text("Esse mês você gastou \$400 reais com jogos! Tente abaixar esse custo!"),
+        TextButton(onPressed: (){}, child: const Text("Diga-me como!", style: TextStyle(fontSize: 16, color: ThemeColors.primaryColor),))
       ],
     );
   }
