@@ -13,6 +13,10 @@ ThemeData MyTheme = ThemeData(
       fontSize: 28,
       fontWeight: FontWeight.bold,
       color: Colors.white
+    ),
+    titleMedium: TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.normal,
     )
   ),
 );
